@@ -59,6 +59,10 @@ body {
 .botoes {
     display: block;
 }
+.botao.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--rosa);
+}
 .abas-textos{
     background-color: var(--texto-fundo);
     padding: 40px;
@@ -95,7 +99,3 @@ body {
     }
 }
 
-.botao.ativo{
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--rosa);
-}
