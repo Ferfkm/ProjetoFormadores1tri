@@ -13,12 +13,12 @@ for (let i = 0; i<botoes.length; i++) {
 }
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-10-05T23:59:59");
+
 let tempoAtual = new Date();
 let tempoFinal = tempoObjetivo1 - tempoAtual;
-
 contadores[0].textContent = tempoFinal;
 let segundos = tempoFinal / 1000;
-let minutios = segundos / 60;
+let minutos = segundos / 60;
 let horas = minutos / 60;
 let dias = horas / 24; 
 let horas = Math.floor(minutos / 60);
