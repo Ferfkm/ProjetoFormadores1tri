@@ -27,7 +27,7 @@ function calculaTempo(tempoObjetivo1){
     minutos %= 60;
     horas %= 24;
 
-contadores[0].textContent = dias + " dias "
+return dias + " dias "
     + horas + " hora "
     + minutos + " minutos "
     + segundos + " segundos ";
