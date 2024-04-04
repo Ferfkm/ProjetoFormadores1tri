@@ -23,3 +23,5 @@ let horas = minutos / 60;
 let dias = horas / 24; 
 let horas = Math.floor(minutos / 60);
 let horas = Math.floor(horas / 24);
+
+contadores[0].textContent = tempoFinal;
