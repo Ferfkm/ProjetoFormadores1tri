@@ -12,6 +12,15 @@ for (let i = 0; i < botoes.length; i++) {
 }
 const contadores = document.querySelectorAll(".contador");
 const tempoObjetivo1 = new Date("2024-04-19T23:59:59");
+const tempoObjetivo2 = new Date("2024-12-30T23:59:59");
+const tempoObjetivo3 = new Date("2024-10-01T23:59:59");
+const tempoObjetivo4 = new Date("2024-08-25T23:59:59");
+
+const tempos = [
+    tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4
+];
+
+contadores[0].textContent = calculaTempo(tempoObjetivo1);
 
 function calculaTempo(tempoObjetivo1){
     let tempoAtual = new Date();
@@ -25,8 +34,8 @@ function calculaTempo(tempoObjetivo1){
     minutos %= 60;
     horas %= 24;
 
-return dias + " dias "
-    + horas + " hora "
-    + minutos + " minutos "
-    + segundos + " segundos ";
+return dias + "dias"
+    + horas + "hora"
+    + minutos + "minutos"
+    + segundos + "segundos";
 }
